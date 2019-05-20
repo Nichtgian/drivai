@@ -19,3 +19,6 @@ Used to generate random tracks without intersections.
 AI
 ^^^
 AI neural network (NEAT)
+
+- https://www.youtube.com/watch?v=r428O_CMcpI[YouTube CodeBullet]
+- https://www.youtube.com/watch?v=wL7tSgUpy8w[YouTube Gigante]
