@@ -6,14 +6,15 @@ cars around random generated race tracks.
 Inspired by CodeBullet.
 
 Guides
-~~~~~~~~~~~
+~~~~~~
 Track generation
 ^^^^^^^^^^^^^^^^^
 Used to generate random tracks without intersections.
-* https://stackoverflow.com/questions/9489736/catmull-rom-curve-with-no-cusps-and-no-self-intersections[stackoverflow curve]
-* https://www.gamasutra.com/blogs/GustavoMaciel/20131229/207833/Generating_Procedural_Racetracks.php[blog curve]
-* https://bl.ocks.org/mbostock/22c3971eed37127f2ba8[curve]
-* http://static.opengameart.org/procgen/procgen_track.js[js implementation]
+
+- https://stackoverflow.com/questions/9489736/catmull-rom-curve-with-no-cusps-and-no-self-intersections[stackoverflow curve]
+- https://www.gamasutra.com/blogs/GustavoMaciel/20131229/207833/Generating_Procedural_Racetracks.php[blog curve]
+- https://bl.ocks.org/mbostock/22c3971eed37127f2ba8[curve]
+- http://static.opengameart.org/procgen/procgen_track.js[js implementation]
 
 AI
 ^^^
