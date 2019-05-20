@@ -22,3 +22,4 @@ AI neural network (NEAT)
 
 - https://www.youtube.com/watch?v=r428O_CMcpI[YouTube CodeBullet]
 - https://www.youtube.com/watch?v=wL7tSgUpy8w[YouTube Gigante]
+- https://wagenaartje.github.io/neataptic/docs/neat/[neataptic]
