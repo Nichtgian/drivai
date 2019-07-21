@@ -22,16 +22,15 @@ class Line {
         const b2 = b.start.x - b.end.x;
         const c2 = a2 * (b.start.x) + b2 * (b.start.y)
 
-        const d = a1 * b2 - a2 * b1; 
-
+        const d = a1 * b2 - a2 * b1;
         if (d == 0) {
             return Infinity;
         }
 
-        const x = (b2 * c1 - b1 * c2) / d; 
-        const y = (a1 * c2 - a2 * c1) / d; 
+        const intersectX = (b2 * c1 - b1 * c2) / d;
+        const intersecty = (a1 * c2 - a2 * c1) / d;
 
-        return new Point(x, y);
+        return new Point(intersectX, intersectY);
     }
 
     doesLineIntersect(b) {
@@ -45,7 +44,7 @@ class Line {
             return false;
         }
 
-        return point.isOnLine(a) && 
+        return point.isOnLine(a) &&
             point.isOnLine(b);
     }
 }

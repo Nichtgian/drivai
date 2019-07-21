@@ -20,28 +20,22 @@ class Point {
     }
 
     static isPointOnLine(point, line) {
-        const lineStart = line.start;
-        const lineEnd = line.end;
+        const lineS = line.start;
+        const lineE = line.end;
 
-        const dxc = point.x - lineStart.x;
-        const dyc = point.y - lineStart.y;
-        const dxl = lineEnd.x - lineStart.x;
-        const dyl = lineEnd.y - lineStart.y;
+        const aX = point.x - lineS.x;
+        const aY = point.y - lineS.y;
+        const bX = lineE.x - lineS.x;
+        const bY = lineE.y - lineS.y;
 
-        const cross = dxc * dyl - dyc * dxl;
-        if (cross != 0) {
+        const c = aX * bY - aY * bX;
+        if (c != 0) {
             return false;
         }
 
-        if (Math.abs(dxl) >= Math.abs(dyl)) {
-            return dxl > 0 ? 
-                lineStart.x <= point.x && point.x <= lineEnd.x :
-                lineEnd.x <= point.x && point.x <= lineStart.x;
+        if (Math.abs(bX) >= Math.abs(bY)) {
+            return bX > 0 ? lineS.x <= point.x && point.x <= lineE.x : lineE.x <= point.x && point.x <= lineS.x;
         }
-        else {
-            return dyl > 0 ? 
-                lineStart.y <= point.y && point.y <= lineEnd.y :
-                lineEnd.y <= point.y && point.y <= lineStart.y;
-        }
+        return bY > 0 ? lineS.y <= point.y && point.y <= lineE.y : lineE.y <= point.y && point.y <= lineS.y;
     }
 }
