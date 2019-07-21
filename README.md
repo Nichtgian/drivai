@@ -5,7 +5,7 @@ cars around random generated race tracks.
 
 Idea inspired by [CodeBullet](https://www.youtube.com/channel/UC0e3QhIYukixgh5VVpKHH9Q).
 
-<img src='https://github.com/Nichtgian/drivai/tree/master/src/example.png' width='300px'/>
+<img src='https://raw.githubusercontent.com/Nichtgian/drivai/master/src/example.png' width='300px'/>
 
 ## Current Version
 
@@ -19,20 +19,22 @@ Idea inspired by [CodeBullet](https://www.youtube.com/channel/UC0e3QhIYukixgh5VV
 - [ ] AI
 
 ## Guides
+Usefull guides and examples maybe useful for this project.
+
 ### Track generation
 Used to generate random tracks without intersections.
 
-- https://stackoverflow.com/questions/9489736/catmull-rom-curve-with-no-cusps-and-no-self-intersections[stackoverflow curve]
-- https://www.gamasutra.com/blogs/GustavoMaciel/20131229/207833/Generating_Procedural_Racetracks.php[blog curve]
-- https://bl.ocks.org/mbostock/22c3971eed37127f2ba8[curve]
-- http://static.opengameart.org/procgen/procgen_track.js[js implementation]
+- [stackoverflow catmull rom curve](https://stackoverflow.com/questions/9489736/catmull-rom-curve-with-no-cusps-and-no-self-intersections)
+- [blog track generation](https://www.gamasutra.com/blogs/GustavoMaciel/20131229/207833/Generating_Procedural_Racetracks.php)
+- [catmull rom curve implementation](https://bl.ocks.org/mbostock/22c3971eed37127f2ba8)
+- [js implementation example](http://static.opengameart.org/procgen/procgen_track.js)
 
 ### AI
 AI neural network (NEAT)
 
-- https://www.youtube.com/watch?v=r428O_CMcpI[YouTube CodeBullet]
-- https://www.youtube.com/watch?v=wL7tSgUpy8w[YouTube Gigante]
-- https://wagenaartje.github.io/neataptic/docs/neat/[neataptic]
+- [YouTube CodeBullet](https://www.youtube.com/watch?v=r428O_CMcpI)
+- [YouTube Gigante](https://www.youtube.com/watch?v=wL7tSgUpy8w)
+- [neataptic](https://wagenaartje.github.io/neataptic/docs/neat/)
 
 ## Team
 
