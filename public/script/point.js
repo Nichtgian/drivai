@@ -4,6 +4,13 @@ class Point {
         this.y = y;
     }
 
+    draw(ctx, radius) {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, radius, 0, 2 * Math.PI);
+      ctx.fill();
+      ctx.closePath();
+    }
+
     distanceToPoint(b) {
         return Point.calculateDistanceBetween(this, b);
     }

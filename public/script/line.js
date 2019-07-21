@@ -5,8 +5,11 @@ class Line {
     }
 
     draw(ctx) {
+        ctx.beginPath();
         ctx.moveTo(this.start.x, this.start.y);
         ctx.lineTo(this.end.x, this.end.y);
+        ctx.stroke();
+        ctx.closePath();
     }
 
     getIntersectionPointWith(b) {
@@ -28,7 +31,7 @@ class Line {
         }
 
         const intersectX = (b2 * c1 - b1 * c2) / d;
-        const intersecty = (a1 * c2 - a2 * c1) / d;
+        const intersectY = (a1 * c2 - a2 * c1) / d;
 
         return new Point(intersectX, intersectY);
     }
