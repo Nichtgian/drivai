@@ -112,10 +112,12 @@ function runTest_Point_calculateDistance(testCase) {
 }
 
 function writeTestResults(groupName, testResults) {
-    console.group('Test: ' + groupName);
+    console.group('%c  %c Test: ' + groupName,
+        'border-radius: 50%; background-color: green',
+        'background-color: transparent;');
 
     testResults.forEach((result) => {
-        console.groupCollapsed('%c  %c' + (result.passed == false ? ' failed' : ' passed'), 
+        console.groupCollapsed('%c  %c' + (result.passed == false ? ' failed' : ' passed'),
             'border-radius: 50%; background-color: ' + (result.passed == false ? 'red' : 'green'),
             'background-color: transparent;');
 
@@ -123,7 +125,7 @@ function writeTestResults(groupName, testResults) {
             Result: { value: result.result },
             Expected: { value: result.testCase.expected },
             TestCase: { value: result.testCase }
-            
+
         });
         console.groupEnd();
     });
